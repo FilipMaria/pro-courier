@@ -1,6 +1,6 @@
 #Intellij Specific Files
 *.iml
-*idea
+.idea
 
 #Build folders
 build
