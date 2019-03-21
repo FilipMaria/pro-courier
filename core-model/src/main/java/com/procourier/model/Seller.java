@@ -14,7 +14,7 @@ public final class Seller {
     }
 
     public Seller(String name, Address address) {
-        this(name,address,description=" ");
+        this(name,address, "");
     }
 
     public String getName() {

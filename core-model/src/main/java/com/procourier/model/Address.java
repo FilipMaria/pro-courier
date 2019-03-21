@@ -16,7 +16,7 @@ public class Address {
     }
 
     public Address(String region, String city, String street) {
-        this(region,city,street,streetNumber="");
+        this(region,city,street,"");
     }
 
     public String getRegion() {
