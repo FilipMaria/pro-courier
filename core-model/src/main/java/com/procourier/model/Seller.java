@@ -4,28 +4,29 @@ import java.util.Objects;
 
 public final class Seller {
     private String name;
-    private Address address;
     private String description;
+    private Address address;
 
-    public Seller(String name, Address address, String description) {
-        this.name = Objects.requireNonNull(name);
-        this.address = Objects.requireNonNull(address);
-        this.description = Objects.requireNonNull(description);
+
+    public Seller(String name, String description, Address address) {
+        this.name = name;
+        this.description = description;
+        this.address = address;
     }
 
     public Seller(String name, Address address) {
-        this(name,address, "");
+        this(name," ",address);
     }
 
     public String getName() {
         return name;
     }
 
-    public Address getAddress() {
-        return address;
-    }
-
     public String getDescription() {
         return description;
+    }
+
+    public Address getAddress() {
+        return address;
     }
 }

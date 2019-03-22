@@ -17,7 +17,7 @@ public final class Product {
     }
     private static Long checkWeight(Long weight){
         if(weight <= 0){
-            throw IllegalArgumentException("weight must be non negative");
+            throw new IllegalArgumentException("weight must be non negative");
         }
         return Objects.requireNonNull(weight);
     }

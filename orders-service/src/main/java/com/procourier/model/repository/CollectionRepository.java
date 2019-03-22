@@ -1,14 +1,15 @@
 package com.procourier.repository;
 
 import com.procourier.model.Order;
+import com.procourier.model.repository.OrderRepository;
 
 import java.util.*;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-public class CollectionRepository implements OrderRepository{
+public class CollectionRepository implements OrderRepository {
 
-    private final Map<Long, Order> orders = new HashSet<>();
+    private final Map<Long, Order> orders = new HashMap<>();
 
 
     @Override

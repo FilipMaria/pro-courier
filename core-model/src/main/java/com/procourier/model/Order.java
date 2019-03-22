@@ -14,7 +14,7 @@ public final class Order {
     private Map<Product, Integer>orderLines;
 
     public Order(Long ID, Seller seller, Buyer buyer, Courier courier, Instant submittedDate, Map<Product, Integer> orderLines) {
-        this.ID=Objects.requireNonNull(ID)
+        this.ID=Objects.requireNonNull(ID);
         this.seller = Objects.requireNonNull(seller);
         this.buyer = Objects.requireNonNull(buyer);
         this.courier = Objects.requireNonNull(courier);

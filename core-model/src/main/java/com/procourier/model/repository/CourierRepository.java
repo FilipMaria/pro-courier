@@ -1,4 +1,4 @@
-package com.procourier.repository;
+package com.procourier.model.repository;
 
 import com.procourier.model.Courier;
 
