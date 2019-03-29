@@ -20,7 +20,8 @@ public class OrderServiceMain {
         final Address courierAddress = new Address("DJ","Craiova","Nicolae Titulescu");
         final Courier courier= new Courier(1L,"ExpressFan", courierAddress,5L,7L);
 
-        final var products = Map.of(new Product(20L,"Jeans","Men Jeans",22L));
+        final var products = Map.of(new Product(20L,"Jeans","Men Jeans",22L),1);
+
 
         final Order order = new Order(6L,seller,buyer,courier,products);
         repository.put(order);
