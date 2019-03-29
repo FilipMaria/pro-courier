@@ -9,18 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>core-model</artifactId>
-    <version>1.0-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <groupId>com.procourier</groupId>
+    <artifactId>example_reflection</artifactId>
 
-<<<<<<< HEAD
 
-=======
-    <dependencies>
-        <dependency>
-            <groupId>org.eclipse.persistence</groupId>
-            <artifactId>org.eclipse.persistence.jpa</artifactId>
-        </dependency>
-    </dependencies>
->>>>>>> cef27b5c336e31305fb99f676eba2824b431dd1b
 </project>

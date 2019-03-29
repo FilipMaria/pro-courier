@@ -16,6 +16,7 @@ public final class OrdersHandler implements Route {
         this.repository = Objects.requireNonNull(repository);
     }
 
+<<<<<<< HEAD
 
         @Override
         public Object handle(Request request, Response response) throws Exception {
@@ -29,4 +30,17 @@ public final class OrdersHandler implements Route {
 
         }
 
+=======
+    @Override
+    public Object handle(Request request, Response response) throws Exception {
+        final String id = request.params(":id");
+        final Long longId = Long.valueOf(id);
+
+        final Optional<Order> order = repository.findById(longId);
+        final String info = order.map(o -> o.getBuyer().getName() + " a cumparat de la " + o.getSeller().getName() + " si coletul a fost expediat prin " + o.getCourier().getCompanyName())
+                .orElse("Not found");
+
+        return info;
+    }
+>>>>>>> cef27b5c336e31305fb99f676eba2824b431dd1b
 }

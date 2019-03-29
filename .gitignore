@@ -1,7 +1,15 @@
+<<<<<<< HEAD
 #Intellij Specific Files
 *.iml
 .idea
 
 #Build folders
+=======
+# Intellij Specific Files
+*.iml
+.idea
+
+# Build folders
+>>>>>>> cef27b5c336e31305fb99f676eba2824b431dd1b
 build
 target
